@@ -1,6 +1,14 @@
+import { useRouter } from "next/navigation";
+
 import PromptCard from "./PromptCard";
 
 const Profile = ({ name, desc, data, handleEdit, handleDelete }) => {
+	const router = useRouter();
+
+	const handleTagClick = (tag) => {
+		router.push(`/?tag=${tag}`);
+	};
+
 	return (
 		<section className="w-full">
 			<h1 className="head_text text-left">
@@ -16,6 +24,7 @@ const Profile = ({ name, desc, data, handleEdit, handleDelete }) => {
 						post={post}
 						handleEdit={() => handleEdit && handleEdit(post)}
 						handleDelete={() => handleDelete && handleDelete(post)}
+						handleTagClick={handleTagClick}
 					/>
 				))}
 			</div>
