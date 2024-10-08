@@ -41,20 +41,20 @@ The web application uses the following programming technologies:
 
 ### The main page
 
-![image](https://github.com/MKKosmowski/nextjs-course/docs/home.png)
+![image](https://github.com/MKKosmowski/llm-prompts-website/blob/main/docs/home.png?raw=true)
 
 ### Search system
 
-![image](https://github.com/MKKosmowski/nextjs-course/docs/search.png)
+![image](https://github.com/MKKosmowski/llm-prompts-website/blob/main/docs/search.png?raw=true)
 
 ### Creating post
 
-![image](https://github.com/MKKosmowski/nextjs-course/docs/create_prompt.png)
+![image](https://github.com/MKKosmowski/llm-prompts-website/blob/main/docs/create_prompt.png?raw=true)
 
 ### Profile page
 
-![image](https://github.com/MKKosmowski/nextjs-course/docs/profile_view.png)
+![image](https://github.com/MKKosmowski/llm-prompts-website/blob/main/docs/profile_view.png?raw=true)
 
 ### Managing posts
 
-![image](https://github.com/MKKosmowski/nextjs-course/docs/manage_posts.png)
+![image](https://github.com/MKKosmowski/llm-prompts-website/blob/main/docs/manage_posts.png?raw=true)
