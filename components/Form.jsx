@@ -7,8 +7,9 @@ const Form = ({ type, post, setPost, submiting, handleSubmit }) => {
 				<span className="blue_gradient">{type} Prompt</span>
 			</h1>
 			<p className="desc text-left max-w-md">
-				{type} and share amazing prompts with the world, and let your
-				imagination run wild with any AI-powered platform.
+				{/* {type} and share amazing prompts with the world, and let your
+				imagination run wild with any AI-powered platform. */}
+				{type} i dziel się niezwykłymi promptami ze światem. Pozwól twojej idei wyruszyć w świat na każdej platformie AI.
 			</p>
 
 			<form
@@ -17,7 +18,7 @@ const Form = ({ type, post, setPost, submiting, handleSubmit }) => {
 			>
 				<label>
 					<span className="font-satoshi font-semibold text-base text-gray-700">
-						Your AI Prompt
+						Twój Prompt AI
 					</span>
 					<textarea
 						value={post.prompt}
@@ -31,7 +32,7 @@ const Form = ({ type, post, setPost, submiting, handleSubmit }) => {
 				<label>
 					<span className="font-satoshi font-semibold text-base text-gray-700">
 						Tag{" "}
-						<span className="font-normal">(product, webdevelopment, idea)</span>
+						<span className="font-normal">(produkt, webdevelopment, pomysł)</span>
 					</span>
 					<input
 						value={post.tag}
@@ -43,7 +44,7 @@ const Form = ({ type, post, setPost, submiting, handleSubmit }) => {
 
 					<div className="flex-end mx-3 mb-5 gap-4 pt-5">
 						<Link href="/" className="text-gray-500 text-sm">
-							Cancel
+							Anuluj
 						</Link>
 
 						<button

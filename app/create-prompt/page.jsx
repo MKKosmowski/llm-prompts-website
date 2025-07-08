@@ -41,7 +41,7 @@ const CreatePrompt = () => {
 
 	return (
 		<Form
-			type="Create"
+			type="Utwórz"
 			post={post}
 			setPost={setPost}
 			submiting={submiting}

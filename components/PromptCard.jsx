@@ -91,14 +91,14 @@ const PromptCard = ({
 						className="font-inter text-sm green_gradient cursor-pointer"
 						onClick={handleEdit}
 					>
-						Edit
+						Edytuj
 					</p>
 
 					<p
 						className="font-inter text-sm orange_gradient cursor-pointer"
 						onClick={handleDelete}
 					>
-						Delete
+						Usuń
 					</p>
 				</div>
 			)}

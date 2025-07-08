@@ -57,7 +57,7 @@ const EditPrompt = () => {
 
 	return (
 		<Form
-			type="Edit"
+			type="Edytuj"
 			post={post}
 			setPost={setPost}
 			submiting={submiting}

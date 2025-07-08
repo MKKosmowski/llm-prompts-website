@@ -82,7 +82,7 @@ const Feed = () => {
 			<form className="relative w-full flex-center">
 				<input
 					type="text"
-					placeholder="Search for a tage or a username"
+					placeholder="Wyszukaj tag lub nazwę użytkownika"
 					value={searchText}
 					onChange={handleSearchChange}
 					required

@@ -39,11 +39,11 @@ const Nav = () => {
 				{session?.user ? (
 					<div className="flex gap-3 md:gap-5">
 						<Link href="/create-prompt" className="black_btn">
-							Create Prompt
+							Utwórz Prompt
 						</Link>
 
 						<button type="button" onClick={signOut} className="outline_btn">
-							Sign Out
+							Wyloguj się
 						</button>
 
 						<Link href="/profile">
@@ -68,7 +68,7 @@ const Nav = () => {
 									}}
 									className="black_btn"
 								>
-									Sign In
+									Zaloguj się
 								</button>
 							))}
 					</>
@@ -95,7 +95,7 @@ const Nav = () => {
 									className="dropdown_link"
 									onClick={() => setToggleDropdown(false)}
 								>
-									My Profile
+									Mój Profil
 								</Link>
 								<Link
 									href="/create-prompt"
@@ -112,7 +112,7 @@ const Nav = () => {
 									}}
 									className="mt-5 w-full black_btn"
 								>
-									Sign Out
+									Wyloguj Się
 								</button>
 							</div>
 						)}
@@ -129,7 +129,7 @@ const Nav = () => {
 									}}
 									className="black_btn"
 								>
-									Sign In
+									Zaloguj Się
 								</button>
 							))}
 					</>
@@ -140,5 +140,3 @@ const Nav = () => {
 };
 
 export default Nav;
-
-// https://youtu.be/wm5gMKuwSYk?si=fKXBTi89U3ByUirA&t=4325

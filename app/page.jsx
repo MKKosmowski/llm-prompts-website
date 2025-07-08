@@ -4,13 +4,16 @@ const Home = () => {
 	return (
 		<section className="w-full flex-center flex-col">
 			<h1 className="head_text text-center">
-				Discover & Share
+				Odkrywaj i dziel się
 				<br className="max-mid:hidden" />
-				<span className="orange_gradient text-center">AI-Powered Prompts</span>
+				<span className="orange_gradient text-center">
+					Prompty napędzane przez AI
+				</span>
 			</h1>
 			<p className="desc text-center">
-				Promptopia is an open-source AI prompting tool for modern world to
-				discover, create and share creative prompts
+				Promptopia to open-source'owe narzędzie do generowania promptów AI,
+				które pozwala odkrywać, tworzyć i udostępniać kreatywne prompty w
+				nowoczesnym świecie.
 			</p>
 
 			<Feed />

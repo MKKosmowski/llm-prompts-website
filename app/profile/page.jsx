@@ -68,11 +68,11 @@ const MyProfile = () => {
 
 	return (
 		<Profile
-			name={profileUsername == "My" ? "My" : ` ${profileUsername}'s`}
+			name={profileUsername == "My" ? "My" : ` ${profileUsername}`}
 			desc={
 				profileUsername == "My"
-					? "Welcome to your personalized profile page"
-					: `Welcome to ${profileUsername}'s profile page`
+					? "Witaj na Twojej stronie profilu"
+					: `Witaj na stronie profilu użytkownika ${profileUsername}`
 			}
 			data={posts}
 			handleEdit={handleEdit}
