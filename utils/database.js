@@ -11,7 +11,10 @@ export const connectToDB = async () => {
 	}
 
 	try {
-		await mongoose.connect(process.env.MONGODB_URI);
+		await mongoose.connect(process.env.MONGODB_URI, {
+			dbName: process.env.MONGODB_DB || "test", // default database
+			family: 4, // force IPv4 to avoid IPv6 DNS hangups
+		});
 
 		isConected = true;
 		console.log("MongoDB connected");

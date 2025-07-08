@@ -25,7 +25,7 @@ const PromptCard = ({
 	};
 
 	return (
-		<div className="prompt_card">
+		<div className="prompt_card relative">
 			<div className="flex justify-between items-start gap-5">
 				<div
 					className="flex-1 flex justify-start items-center gap-3 cursor-pointer"
@@ -51,7 +51,10 @@ const PromptCard = ({
 					</div>
 				</div>
 
-				<div className="copy_btn" onClick={handleCopy}>
+				<div
+					className="copy_btn absolute right-0 top-0 mr-2 mt-2"
+					onClick={handleCopy}
+				>
 					<Image
 						src={
 							copied === post.prompt
@@ -60,18 +63,27 @@ const PromptCard = ({
 						}
 						width={12}
 						height={12}
+						alt=""
 					/>
 				</div>
 			</div>
 
 			<p className="my-4 font-satoshi text-sm text-gray-700">{post.prompt}</p>
 
-			<p
-				className="font-inter text-sm blue_gradient cursor-pointer"
-				onClick={() => handleTagClick(post.tag)}
-			>
-				#{post.tag}
-			</p>
+			<div className="flex gap-2 flex-wrap">
+				{post.tag
+					.split(/[,\s]+/)
+					.filter(Boolean)
+					.map((t) => (
+						<p
+							key={t}
+							className="font-inter text-sm blue_gradient cursor-pointer"
+							onClick={() => handleTagClick(t)}
+						>
+							#{t}
+						</p>
+					))}
+			</div>
 
 			{session?.user.id === post.creator._id && pathName === "/profile" && (
 				<div className="mt-5 flex-center gap-4 border-t border-gray-100 pt-3">
