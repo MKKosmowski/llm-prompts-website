@@ -2,39 +2,59 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, install npm dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+
+Similarly, you can use other package managers.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Functionalities
 
-To learn more about Next.js, take a look at the following resources:
+he web application implements the following functionalities:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Google Authentication (Firebase)
+- Managing Large Language Model Prompts as posts - (CRUD)
+- Post search system
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Used Technologies:
 
-## Deploy on Vercel
+The web application uses the following programming technologies:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Next.js
+- Firebase
+- MongoDB (with mongoose)
+- TailwindCSS
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Examples of usage
 
-## Tutorial link
+### The main page
 
-Tutorial [link](https://youtu.be/wm5gMKuwSYk?si=hfQMr4bwV8WNdOFH&t=11447) with current timestamp.
+![image](https://github.com/MKKosmowski/llm-prompts-website/blob/main/docs/home.png?raw=true)
+
+### Search system
+
+![image](https://github.com/MKKosmowski/llm-prompts-website/blob/main/docs/search.png?raw=true)
+
+### Creating post
+
+![image](https://github.com/MKKosmowski/llm-prompts-website/blob/main/docs/create_prompt.png?raw=true)
+
+### Profile page
+
+![image](https://github.com/MKKosmowski/llm-prompts-website/blob/main/docs/profile_view.png?raw=true)
+
+### Managing posts
+
+![image](https://github.com/MKKosmowski/llm-prompts-website/blob/main/docs/manage_posts.png?raw=true)
